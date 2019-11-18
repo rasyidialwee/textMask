@@ -1,4 +1,4 @@
-package com.netbytesec.textmasking
+package com.example.text
 
 import org.junit.Test
 
