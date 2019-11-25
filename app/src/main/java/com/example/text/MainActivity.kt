@@ -3,7 +3,7 @@ package com.example.text
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.EditText
-import android.util.Base64;
+import android.util.Base64
 import androidx.core.content.ContextCompat.getSystemService
 import android.icu.lang.UCharacter.GraphemeClusterBreak.T
 import java.nio.charset.Charset
@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        decodeToString("S2VwYWxhVGVyYmFrYXI= ")
+        decodeToString("Q1RGSUNPTntOZXRCeXRlU2VjfQ==")
     }
 
     fun decodeToString(encodedString : String){
@@ -29,8 +29,8 @@ class MainActivity : AppCompatActivity() {
         val text = String(plain, Charsets.UTF_8)
         println("Decoded = $text")
 
-        val s1: String = text.substring(0,3)
-        val s2: String = text.substring(10,12)
+        val s1: String = text.substring(0,8)
+        val s2: String = text.substring(18)
 
         val mask: String = s1 + "********" + s2
 
