@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        decodeToString("Q1RGSUNPTntOZXRCeXRlU2VjfQ==")
+        decodeToString("Q1RGSUNPTntSM3ZlciQzTkJTfQ==")
     }
 
     fun decodeToString(encodedString : String){
